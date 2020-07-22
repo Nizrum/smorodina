@@ -85,4 +85,67 @@ body {
 .phone {
   font-weight: bold;
 }
+
+.main {
+  background-color: #ffdfeb;
+}
+
+.main__inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.main__title {
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 150%;
+  margin: 0;
+}
+
+.main__subtitle {
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 150%;
+  margin: 0;
+  margin-top: 20px;
+}
+
+.main__button {
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 150%;
+  background-color: #77c20b;
+  padding: 21px 48px;
+  border: none;
+  margin-top: 35px;
+  border-radius: 35px;
+  cursor: pointer;
+  outline: none;
+}
+
+.main__image {
+  position: relative;
+}
+
+.main__img {
+  z-index: 2;
+}
+
+.main__light {
+  width: 300px;
+  height: 300px;
+  background: #000;
+  position: absolute;
+  top: 28%;
+  left: 28%;
+  z-index: 1;
+  border-radius: 50%;
+}
 /*# sourceMappingURL=style.css.map */

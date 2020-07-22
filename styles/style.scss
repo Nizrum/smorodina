@@ -23,11 +23,7 @@ body {
         justify-content: space-between;
         align-items: center;
     }
-
-    &__logo {
-
-    }
-
+    
     &__menu {
         margin-bottom: -5px;
     }
@@ -73,4 +69,62 @@ body {
 
 .phone {
     font-weight: bold;
+}
+
+.main {
+    background-color: #ffdfeb;
+
+    &__inner {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__title {
+        font-weight: bold;
+        font-size: 36px;
+        line-height: 150%;
+        margin: 0;
+    }
+
+    &__subtitle {
+        font-weight: normal;
+        font-size: 24px;
+        line-height: 150%;
+        margin: 0;
+        margin-top: 20px;
+    }
+
+    &__button {
+        font-weight: bold;
+        font-size: 18px;
+        line-height: 150%;
+        background-color: #77c20b;
+        padding: 21px 48px;
+        border: none;
+        margin-top: 35px;
+        border-radius: 35px;
+        cursor: pointer;
+        outline: none;
+    }
+
+    &__image {
+        position: relative;
+    }
+
+    &__img {
+        z-index: 2;
+    }
+
+    &__light {
+        width: 300px;
+        height: 300px;
+        background: #000;
+        // filter: blur(200px);
+        position: absolute;
+        top: 28%;
+        left: 28%;
+        z-index: 1;
+        border-radius: 50%;
+    }
 }
