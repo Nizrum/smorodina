@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles/style.css">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
     <title>Smorodina</title>
 </head>
 <body>
@@ -92,5 +93,105 @@
             </div>
         </div>
     </section>
+    <section class="catalog">
+        <div class="container">
+            <div class="catalog__inner">
+                <h2 class="catalog__title">Каталог продуктов</h2>
+                <div class="catalog__filters">
+                    <button class="catalog__filter filter active">Все</button>
+                    <button class="catalog__filter filter">Красная</button>
+                    <button class="catalog__filter filter">Чёрная</button>
+                    <button class="catalog__filter filter">Белая</button>
+                </div>
+                <div class="catalog__cards">
+                    
+                    <div class="swiper-container">
+
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="catalog__card card">
+                                    <div class="card__type type">
+                                        <div class="type__color type__color--red"></div>
+                                        <div class="type__text">Красная смородина</div>
+                                    </div>
+                                    <img src="img/natali.jpg" alt="natali" class="card__image">
+                                    <div class="card__text">
+                                        <h4 class="card__title">Натали</h4>
+                                        <div class="card__subtitle">
+                                            Среднеспелый сорт 
+                                            со вкусными 
+                                            кисло-сладкими ягодами
+                                        </div>
+                                        <div class="card__price">600₽ /кг</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="catalog__card card">
+                                    <div class="card__type type">
+                                        <div class="type__color type__color--black"></div>
+                                        <div class="type__text">Чёрная смородина</div>
+                                    </div>
+                                    <img src="img/bagira.jpg" alt="bagira" class="card__image">
+                                    <div class="card__text">
+                                        <h4 class="card__title">Багира</h4>
+                                        <div class="card__subtitle">
+                                            Сладкая смородина, 
+                                            среднего срока 
+                                            созревания
+                                        </div>
+                                        <div class="card__price">640₽ /кг</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="catalog__card card">
+                                    <div class="card__type type">
+                                        <div class="type__color type__color--white"></div>
+                                        <div class="type__text">Белая смородина</div>
+                                    </div>
+                                    <img src="img/bulon.jpg" alt="bulon" class="card__image">
+                                    <div class="card__text">
+                                        <h4 class="card__title">Булонь</h4>
+                                        <div class="card__subtitle">
+                                            Ягоды кремового 
+                                            цвета с нежной 
+                                            кисло-сладкой мякотью
+                                        </div>
+                                        <div class="card__price">580₽ /кг</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <button class="swiper-button-prev control-button">
+                        <img src="img/arrow.svg" alt="arw">
+                    </button>
+                    <button class="swiper-button-next control-button">
+                        <img src="img/arrow.svg" alt="arw">
+                    </button>
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="script.js"></script>
+    <script type="module">
+        import Swiper from 'https://unpkg.com/swiper/swiper-bundle.esm.browser.min.js'
+      
+        const swiper = new Swiper('.swiper-container', {
+
+            loop: true,
+            slidesPerView: 3,
+            spaceBetween: 80,
+
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+        });
+    </script>
 </body>
 </html>
