@@ -362,3 +362,51 @@ body {
         transform: rotate(180deg);
     }
 }
+
+.gallery {
+
+    &__inner {
+        padding: 120px 0;
+        text-align: center;
+    }
+
+    &__title {
+        font-weight: bold;
+        font-size: 36px;
+        line-height: 150%;
+        color: #151515;
+        margin: 0;
+        margin-bottom: 60px;
+    }
+}
+
+.photos {
+    width: 1170px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    &__group {
+        height: 780px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__image {
+        object-fit: cover;
+        border-radius: 12px;
+        overflow: hidden;
+        width: 370px;
+    }
+
+    &__image--small {
+        height: 250px;
+    }
+
+    &__image--big {
+        height: 500px;
+    }
+}
