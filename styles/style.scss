@@ -482,6 +482,7 @@ body {
 .contact {
     background-color: #9368a9;
     position: relative;
+    overflow: hidden;
 
     &__inner {
         padding: 120px 0;
@@ -565,6 +566,7 @@ body {
         border: none;
         cursor: pointer;
         margin-left: auto;
+        outline: none;
         font-family: 'Montserrat', sans-serif;
     }
 
@@ -572,5 +574,222 @@ body {
         position: absolute;
         top: 2%;
         right: -13%;
+    }
+
+    &__circle--big {
+        width: 250px;
+        height: 250px;
+        position: absolute;
+        top: -125px;
+        left: -125px;
+        border: 30px solid #77C20B;
+        border-radius: 50%;
+    }
+
+    &__circle--small {
+        width: 175px;
+        height: 175px;
+        position: absolute;
+        bottom: -87.5px;
+        border: 25px solid #F3D8A1;
+        border-radius: 50%;
+    }
+}
+
+.footer {
+    
+    &__inner {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__left-side {
+        height: 150px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    &__map {
+        height: 310px;
+    }
+
+    &__contacts {
+        height: 150px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        justify-content: space-between;
+    }
+
+    &__contact {
+        font-weight: bold;
+        font-size: 16px;
+        line-height: 16px;
+    }
+}
+
+.socials {
+
+    width: 130px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    &__item {
+        display: block;
+    }
+}
+
+
+
+@media (max-width: 1366px) {
+    
+    .container {
+        width: 1000px;
+    }
+
+    .main {
+
+        &__title {
+            font-size: 30px;
+        }
+
+        &__subtitle {
+            font-size: 20px;
+        }
+
+        &__img {
+            height: 550px;
+        }
+    }
+
+    .advantages {
+
+        &__title {
+            font-size: 30px;
+        }
+    }
+
+    .catalog {
+
+        &__title {
+            font-size: 30px;
+        }
+
+        &__filter {
+            font-size: 14px;
+        }
+    }
+
+    .swiper-container {
+        width: 850px;
+    }
+
+    .card {
+        width: 230px;
+    }
+
+    .type__text {
+        font-size: 14px;
+        line-height: 16px;
+    }
+
+    .gallery {
+
+        &__title {
+            font-size: 30px;
+        }
+    }
+
+    .photos {
+        width: 1000px;
+
+        &__image {
+            width: 320px;
+        }
+
+        &__group {
+            height: 770px;
+        }
+    }
+
+    .about {
+
+        &__title {
+            font-size: 30px;
+        }
+
+        &__text-title {
+            font-size: 20px;
+            margin-bottom: 25px;
+        }
+
+        &__text-subtitle {
+            font-size: 18px;
+        }
+
+        &__image {
+            min-width: 510px;
+            height: 475px;
+            margin-left: 50px;
+        }
+
+        &__img--1 {
+            width: 420px;
+            height: 420px;
+        }
+
+        &__img--2 {
+            width: 240px;
+            height: 240px;
+        }
+    }
+
+    .contact {
+
+        &__title {
+            font-size: 30px;
+        }
+
+        &__form {
+            width: 700px;
+        }
+    
+        &__input {
+            width: 320px;
+            margin-bottom: 50px;
+    
+            input {
+                font-size: 20px;
+            }
+        }
+    
+        &__message {
+            width: 100%;
+    
+            textarea {
+                font-size: 20px;
+                height: 130px;
+            }
+    
+            label {
+                font-size: 20px;
+            }
+        }
+
+        &__image {
+            width: 600px;
+            top: 6%;
+            right: -13%;
+        }
+    }
+
+    .footer {
+
+        &__contact {
+            font-size: 14px;
+        }
     }
 }
