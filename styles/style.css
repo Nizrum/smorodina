@@ -32,14 +32,6 @@ body {
           align-items: center;
 }
 
-.header__menu {
-  margin-bottom: -5px;
-}
-
-.header__phone {
-  margin-bottom: -5px;
-}
-
 .logo {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -51,18 +43,7 @@ body {
 }
 
 .logo__image {
-  width: 30px;
-}
-
-.logo__text {
-  color: #151515;
-  font-weight: bold;
-  font-size: 24px;
-  line-height: 24px;
-  letter-spacing: 0.05em;
-  text-transform: uppercase;
-  margin-left: 23px;
-  margin-bottom: -5px;
+  width: 225px;
 }
 
 .menu {
@@ -198,9 +179,6 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -866,6 +844,221 @@ body {
   }
   .footer__contact {
     font-size: 14px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .container {
+    width: 900px;
+  }
+  .header__phone {
+    font-size: 14px;
+  }
+  .menu {
+    width: 450px;
+  }
+  .menu__link {
+    font-size: 14px;
+  }
+  .logo {
+    width: 200px;
+  }
+  .main__title {
+    font-size: 26px;
+  }
+  .main__subtitle {
+    font-size: 18px;
+    margin-top: 14px;
+  }
+  .main__button {
+    padding: 18px 42px;
+    margin-top: 30px;
+  }
+  .main__img {
+    height: 500px;
+  }
+  .advantages__title {
+    font-size: 26px;
+  }
+  .catalog__title {
+    font-size: 26px;
+  }
+  .about__title {
+    font-size: 26px;
+  }
+  .contact__title {
+    font-size: 26px;
+  }
+  .gallery__title {
+    font-size: 26px;
+  }
+  .swiper-container {
+    width: 775px;
+  }
+  .card {
+    width: 220px;
+    min-height: 0;
+  }
+  .card__image {
+    height: 140px;
+  }
+  .photos {
+    width: 900px;
+  }
+  .photos__image {
+    width: 280px;
+  }
+  .photos__group {
+    height: 780px;
+  }
+  .about__text-title {
+    margin-bottom: 20px;
+  }
+  .about__image {
+    min-width: 460px;
+    height: 425px;
+    margin-left: 35px;
+  }
+  .about__img--1 {
+    width: 380px;
+    height: 380px;
+    border-width: 15px;
+  }
+  .about__img--2 {
+    width: 215px;
+    height: 215px;
+    border-width: 15px;
+  }
+  .contact__image {
+    width: 500px;
+    top: 12%;
+    right: -14%;
+  }
+  .contact__circle--big {
+    width: 220px;
+    height: 220px;
+    top: -110px;
+    left: -110px;
+    border: 25px solid #77C20B;
+  }
+  .contact__circle--small {
+    width: 150px;
+    height: 150px;
+    bottom: -75px;
+    border: 20px solid #F3D8A1;
+  }
+  .contact__button {
+    padding: 18px 42px;
+    margin-top: 50px;
+  }
+  .footer__inner {
+    padding: 80px 0;
+  }
+  .footer__map {
+    display: none;
+  }
+}
+
+@media (max-width: 992px) {
+  .container {
+    width: 700px;
+  }
+  .menu {
+    display: none;
+  }
+  .main__img {
+    height: 380px;
+  }
+  .main__title {
+    font-size: 24px;
+  }
+  .main__subtitle {
+    font-size: 16px;
+  }
+  .main__button {
+    font-size: 16px;
+    padding: 16px 36px;
+  }
+  .advantages__title {
+    font-size: 24px;
+  }
+  .advantage__title {
+    font-size: 18px;
+  }
+  .advantage__image {
+    width: 150px;
+    height: 150px;
+    border-width: 8px;
+  }
+  .advantage__img {
+    width: 80px;
+  }
+  .advantage__subtitle {
+    font-size: 16px;
+  }
+  .catalog__title {
+    font-size: 24px;
+  }
+  .catalog__filters {
+    width: 550px;
+  }
+  .filter {
+    font-size: 13px;
+    padding: 5px 24px;
+  }
+  .swiper-container {
+    width: 550px;
+  }
+  .photos {
+    width: 700px;
+  }
+  .photos__image {
+    width: 220px;
+  }
+  .photos__group {
+    height: 620px;
+  }
+  .photos__image--small {
+    height: 200px;
+  }
+  .photos__image--big {
+    height: 400px;
+  }
+  .about__title {
+    font-size: 24px;
+  }
+  .about__text-title {
+    font-size: 18px;
+  }
+  .about__text-subtitle {
+    font-size: 16px;
+  }
+  .about__image {
+    height: 300px;
+    width: 300px;
+    min-width: 300px;
+    margin-left: 35px;
+  }
+  .about__img--1 {
+    width: 300px;
+    height: 300px;
+    border-width: 15px;
+    position: initial;
+  }
+  .about__img--2 {
+    display: none;
+  }
+  .contact__title {
+    font-size: 24px;
+  }
+  .contact__image {
+    display: none;
+  }
+  .contact__input input {
+    font-size: 18px;
+  }
+  .contact__message label {
+    font-size: 18px;
   }
 }
 /*# sourceMappingURL=style.css.map */
