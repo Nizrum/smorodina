@@ -89,6 +89,9 @@ body {
         border-radius: 35px;
         cursor: pointer;
         outline: none;
+        display: inline-block;
+        color: #151515;
+        text-decoration: none;
     }
 
     &__image {
@@ -796,7 +799,7 @@ body {
     }
 
     .logo {
-        width: 200px;
+        width: 225px;
     }
 
     .main {
@@ -932,6 +935,7 @@ body {
 }
 
 @media (max-width: 992px) {
+    
     .container {
         width: 700px;
     }
@@ -941,6 +945,10 @@ body {
     }
 
     .main {
+
+        &__inner {
+            padding-bottom: 100px;
+        }
 
         &__img {
             height: 380px;
@@ -1077,6 +1085,267 @@ body {
 
         &__message label {
             font-size: 18px;
+        }
+    }
+}
+
+@media (max-width: 768px) {
+
+    .container {
+        width: 500px;
+    }
+
+    .main {
+        
+        &__img {
+            display: none;
+        }
+    }
+
+    .advantages {
+
+        &__inner {
+            padding: 100px 0;
+        }
+
+        &__items {
+            margin-top: 50px;
+        }
+    }
+
+    .advantage {
+
+        width: 29%;
+
+        &__image {
+            width: 125px;
+            height: 125px;
+        }
+
+        &__img {
+            width: 65px;
+            height: 65px;
+        }
+
+        &__subtitle {
+            font-size: 14px;
+        }
+    }
+
+    .catalog {
+
+        &__inner {
+            padding: 100px 0;
+        }
+
+        &__title {
+            margin-bottom: 50px;
+        }
+
+        &__cards {
+            width: 450px;
+        }
+    }
+
+    .swiper-container {
+        width: 450px;
+    }
+
+    .card {
+        width: 270px;
+
+        &__image {
+            height: 165px;
+        }
+    }
+
+    .gallery {
+
+        &__inner {
+            padding: 100px 0;
+        }
+
+        &__title {
+            margin-bottom: 50px;
+            font-size: 24px;
+        }
+    }
+
+    .photos {
+
+        width: 500px;
+
+        &__group:last-child {
+            display: none;
+        }
+
+        &__image {
+            width: 240px;
+        }
+    }
+
+    .about {
+
+        &__inner {
+            padding: 100px 0;
+        }
+
+        &__wrapper {
+            flex-direction: column;
+        }
+
+        &__image {
+            margin: 0;
+        }
+
+        &__text {
+            width: 100%;
+            order: 1;
+            margin-top: 35px;
+        }
+
+        &__text-title {
+            text-align: center;
+        }
+
+        &__text-subtitle {
+            text-align: center;
+        }
+    }
+
+    .contact {
+
+        &__inner {
+            padding: 100px 0;
+        }
+
+        &__form {
+            width: 500px;
+        }
+
+        &__input {
+            width: 225px;
+
+            input {
+                font-size: 16px;
+            }
+        }
+
+        &__message label {
+            font-size: 16px;
+        }
+
+        &__button {
+            font-size: 16px;
+            margin-top: 40px;
+        }
+    }
+}
+
+@media (max-width: 576px) {
+
+    .container {
+        width: 90%;
+    }
+
+    .advantage {
+        
+        &__image {
+            border-width: 6px;
+        }
+
+        &__subtitle {
+            font-size: 12px;
+        }
+
+        &__title {
+            margin-bottom: 35px;
+        }
+    }
+
+    .catalog {
+        
+        &__filters {
+            width: 440px;
+        }
+
+        &__cards {
+            width: 400px;
+        }
+    }
+
+    .swiper-container {
+        width: 400px;
+    }
+
+    .filter {
+        font-size: 12px;
+        padding: 5px 20px;
+    }
+
+    .card {
+        width: 240px;
+        min-height: 0;
+
+        &__image {
+            height: 140px;
+        }
+    }
+
+    .photos {
+
+        width: 100%;
+
+        &__image {
+            width: 100%;
+        }
+
+        &__group {
+            width: 47.5%;
+        }
+    }
+
+    .contact {
+
+        &__form {
+            width: 100%;
+        }
+
+        &__input {
+            width: 100%;
+        }
+
+        &__circle--big {
+            width: 180px;
+            height: 180px;
+            top: -90px;
+            left: -90px;
+            border: 20px solid #77C20B;
+        }
+    
+        &__circle--small {
+            width: 120px;
+            height: 120px;
+            bottom: -60px;
+            border: 15px solid #F3D8A1;
+        }
+    }
+
+    .footer {
+
+        &__inner {
+            flex-direction: column;
+        }
+
+        &__left-side {
+            height: 100px;
+            width: auto;
+            align-items: center;
+        }
+
+        &__contacts {
+            margin-top: 30px;
+            align-items: center;
         }
     }
 }

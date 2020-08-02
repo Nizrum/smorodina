@@ -38,9 +38,9 @@
                     <h3 class="main__subtitle">
                         Магазин ароматной смородины <br> подарит вам новые вкусовые <br> ощущения в несколько кликов!
                     </h3>
-                    <button class="main__button">
+                    <a href="#catalog" class="main__button">
                         Посмотреть продукты
-                    </button>
+                    </a>
                 </div>
                 <div class="main__image">
                     <img src="img/main-image.png" alt="smorodina" class="main__img">
@@ -59,9 +59,9 @@
                             <img src="img/more-icon.svg" alt="more" class="advantage__img">
                         </div>
                         <h4 class="advantage__subtitle">
-                            Большое количество<br>
-                            сортов не оставит<br>
-                            в стороне даже<br>
+                            Большое количество
+                            сортов не&nbsp;оставит
+                            в&nbsp;стороне даже
                             заядлого гурмана
                         </h4>
                     </div>
@@ -71,8 +71,8 @@
                             <img src="img/eco-icon.svg" alt="more" class="advantage__img">
                         </div>
                         <h4 class="advantage__subtitle">
-                            Наши кусты смородины<br>
-                            растут в экологически<br>
+                            Наши кусты смородины
+                            растут в&nbsp;экологически
                             чистом районе
                         </h4>
                     </div>
@@ -82,9 +82,9 @@
                             <img src="img/time-icon.svg" alt="more" class="advantage__img">
                         </div>
                         <h4 class="advantage__subtitle">
-                            Мы помогаем вам<br>
-                            чувствовать вкус лета<br>
-                            даже в холодное<br>
+                            Мы помогаем вам
+                            чувствовать вкус лета
+                            даже в&nbsp;холодное
                             время года
                         </h4>
                     </div>
@@ -92,7 +92,7 @@
             </div>
         </div>
     </section>
-    <section class="catalog">
+    <section class="catalog" id="catalog">
         <div class="container">
             <div class="catalog__inner">
                 <h2 class="catalog__title">Каталог продуктов</h2>
@@ -295,7 +295,7 @@
         const swiper = new Swiper('.swiper-container', {
 
             loop: true,
-            slidesPerView: 2,
+            slidesPerView: 1,
             spaceBetween: 45,
 
             navigation: {
@@ -308,6 +308,10 @@
                     slidesPerView: 3,
                     spaceBetween: 30,
                 },
+                768: {
+                    slidesPerView: 2,
+                    spaceBetween: 0,
+                }
             },
         });
     </script>
