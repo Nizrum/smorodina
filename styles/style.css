@@ -352,6 +352,9 @@ body {
   font-size: 14px;
   line-height: 20px;
   margin-bottom: 12px;
+  height: 60px;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .card__price {
@@ -768,6 +771,10 @@ body {
 
 .socials__item {
   display: block;
+}
+
+.hide {
+  display: none;
 }
 
 @media (max-width: 1366px) {

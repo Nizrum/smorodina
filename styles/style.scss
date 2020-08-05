@@ -300,6 +300,9 @@ body {
         font-size: 14px;
         line-height: 20px;
         margin-bottom: 12px;
+        height: 60px;
+        overflow: hidden;
+        text-overflow: ellipsis;
     }
 
     &__price {
@@ -640,6 +643,10 @@ body {
     &__item {
         display: block;
     }
+}
+
+.hide {
+    display: none;
 }
 
 
