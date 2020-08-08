@@ -14,6 +14,10 @@ body {
     margin: 0 auto;
 }
 
+.no-scroll {
+    overflow: hidden;
+}
+
 .header {
     background-color: #ffdfeb;
     padding: 50px 0;
@@ -649,6 +653,105 @@ body {
     display: none;
 }
 
+.m-menu-button {
+    width: 24px;
+    height: 20px;
+    padding: 0;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    border: none;
+    background-color: transparent;
+    outline: none;
+    cursor: pointer;
+
+    &__line {
+        width: 24px;
+        height: 3px;
+        background-color: #151515;
+        transition: all 0.2s;
+    }
+}
+
+.m-menu-button.active {
+
+    position: relative;
+    transform: translateX(6px);
+
+    .m-menu-button__line:nth-child(1) {
+        position: absolute;
+        top: 0;
+        left: 0;
+        transform: rotate(45deg) translateY(12px);
+    }
+
+    .m-menu-button__line:nth-child(2) {
+        display: none;
+    }
+
+    .m-menu-button__line:nth-child(3) {
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        transform: rotate(-45deg) translateY(-12px);
+    }
+}
+
+.m-menu {
+    background-color: #9368a9;
+    width: 100%;
+    height: calc(100vh - 136px);
+    padding: 60px 0;
+    display: none;
+
+    &__container {
+        height: 100%;
+    }
+    
+    &__inner {
+        height: 100%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__link {
+        color: #ffffff;
+        text-decoration: none;
+        font-size: 20px;
+        position: relative;
+    }
+
+    &__link::after {
+        content: '';
+        width: 100%;
+        height: 2px;
+        background-color: #fff;
+        position: absolute;
+        bottom: -3px;
+        left: 0;
+        transform: scale(0);
+        transition: 0.2s;
+    }
+
+    &__phone {
+        color: #ffffff;
+        font-weight: normal;
+        font-size: 20px;
+    }
+}
+
+.m-menu.active {
+    display: block;
+}
+
+.m-menu__link:hover::after {
+    transform: scale(1);
+}
+
 
 
 @media (max-width: 1366px) {
@@ -965,6 +1068,14 @@ body {
     }
 
     .menu {
+        display: none;
+    }
+
+    .m-menu-button {
+        display: flex;
+    }
+
+    .header__phone {
         display: none;
     }
 
@@ -1555,10 +1666,6 @@ body {
         &__image {
             width: 150px;
         }
-    }
-
-    .phone {
-        font-size: 12px;
     }
 
     .catalog__cards {

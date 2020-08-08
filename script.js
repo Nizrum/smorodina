@@ -25,6 +25,9 @@ import Swiper from 'https://unpkg.com/swiper/swiper-bundle.esm.browser.min.js'
 
 const filters = document.querySelectorAll('.filter');
 const products = document.querySelectorAll('.swiper-slide');
+const mMenu = document.querySelector('.m-menu');
+const mMenuBtn = document.querySelector('.m-menu-button');
+const body = document.querySelector('body');
 
 filters.forEach(filter => {
     filter.addEventListener('click', event => {
@@ -50,3 +53,11 @@ filters.forEach(filter => {
         target.classList.add('active');
     });
 });
+
+const toggleMenu = () => {
+    mMenu.classList.toggle('active');
+    body.classList.toggle('no-scroll');
+    mMenuBtn.classList.toggle('active');
+};
+
+mMenuBtn.addEventListener('click', toggleMenu);
