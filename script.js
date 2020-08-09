@@ -1,27 +1,27 @@
 import Swiper from 'https://unpkg.com/swiper/swiper-bundle.esm.browser.min.js'
       
-        const swiper = new Swiper('.swiper-container', {
+const swiper = new Swiper('.swiper-container', {
 
-            loop: false,
-            slidesPerView: 1,
-            spaceBetween: 45,
+    loop: false,
+    slidesPerView: 1,
+    spaceBetween: 45,
 
-            navigation: {
-                nextEl: '.swiper-button-next',
-                prevEl: '.swiper-button-prev',
-            },
+    navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+    },
 
-            breakpoints: {
-                992: {
-                    slidesPerView: 3,
-                    spaceBetween: 30,
-                },
-                768: {
-                    slidesPerView: 2,
-                    spaceBetween: 0,
-                }
-            },
-        });
+    breakpoints: {
+        992: {
+            slidesPerView: 3,
+            spaceBetween: 30,
+        },
+        768: {
+            slidesPerView: 2,
+            spaceBetween: 0,
+        }
+    },
+});
 
 const filters = document.querySelectorAll('.filter');
 const products = document.querySelectorAll('.swiper-slide');
