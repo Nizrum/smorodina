@@ -247,22 +247,22 @@
         <div class="container">
             <div class="contact__inner">
                 <h2 class="contact__title">Появились вопросы? Задавайте!</h2>
-                <form class="contact__form">
+                <form class="contact__form" action="telegram.php" method="POST">
                     <div class="input contact__input">
-                        <input type="text" placeholder="Введите ваше имя">
+                        <input type="text" placeholder="Введите ваше имя" name="name">
                     </div>
                     <div class="input contact__input">
-                        <input type="email" placeholder="Введите ваш email">
+                        <input type="email" placeholder="Введите ваш email" name="email">
                     </div>
                     <div class="input contact__input">
-                        <input type="tel" placeholder="Введите ваш телефон">
+                        <input type="tel" placeholder="Введите ваш телефон" name="phone">
                     </div>
                     <div class="input contact__input">
                         <input type="text" placeholder="Введите тему вопроса">
                     </div>
                     <div class="contact__message">
                         <label for="message">Напишите ваше сообщение</label>
-                        <textarea name="message" id="message" cols="30" rows="10"></textarea>
+                        <textarea name="message" id="message" cols="30" rows="10" name="msg"></textarea>
                     </div>
                     <button class="contact__button" type="submit">Отправить</button>
                 </form>

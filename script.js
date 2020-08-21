@@ -2,7 +2,7 @@ import Swiper from 'https://unpkg.com/swiper/swiper-bundle.esm.browser.min.js'
       
 const swiper = new Swiper('.swiper-container', {
 
-    loop: false,
+    loop: true,
     slidesPerView: 1,
     spaceBetween: 45,
 
