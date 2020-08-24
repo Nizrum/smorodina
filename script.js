@@ -26,6 +26,7 @@ const swiper = new Swiper('.swiper-container', {
 const filters = document.querySelectorAll('.filter');
 const products = document.querySelectorAll('.swiper-slide');
 const mMenu = document.querySelector('.m-menu');
+const link = document.querySelectorAll('.m-menu__link');
 const mMenuBtn = document.querySelectorAll('.m-menu-button');
 const body = document.querySelector('body');
 
@@ -61,3 +62,5 @@ const toggleMenu = () => {
 };
 
 mMenuBtn.forEach(item => item.addEventListener('click', toggleMenu));
+
+link.forEach(item => item.addEventListener('click', toggleMenu));
