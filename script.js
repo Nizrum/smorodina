@@ -26,7 +26,7 @@ const swiper = new Swiper('.swiper-container', {
 const filters = document.querySelectorAll('.filter');
 const products = document.querySelectorAll('.swiper-slide');
 const mMenu = document.querySelector('.m-menu');
-const mMenuBtn = document.querySelector('.m-menu-button');
+const mMenuBtn = document.querySelectorAll('.m-menu-button');
 const body = document.querySelector('body');
 
 filters.forEach(filter => {
@@ -57,7 +57,7 @@ filters.forEach(filter => {
 const toggleMenu = () => {
     mMenu.classList.toggle('active');
     body.classList.toggle('no-scroll');
-    mMenuBtn.classList.toggle('active');
+    mMenuBtn.forEach(item => item.classList.toggle('active'));
 };
 
-mMenuBtn.addEventListener('click', toggleMenu);
+mMenuBtn.forEach(item => item.addEventListener('click', toggleMenu));

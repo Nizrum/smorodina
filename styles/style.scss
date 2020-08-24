@@ -656,6 +656,7 @@ body {
 .m-menu-button {
     width: 24px;
     height: 20px;
+    position: relative;
     padding: 0;
     display: none;
     flex-direction: column;
@@ -670,20 +671,16 @@ body {
         width: 24px;
         height: 3px;
         background-color: #151515;
-        transition: all 0.2s;
     }
 }
 
 .m-menu-button.active {
 
-    position: relative;
-    transform: translateX(6px);
-
     .m-menu-button__line:nth-child(1) {
         position: absolute;
         top: 0;
         left: 0;
-        transform: rotate(45deg) translateY(12px);
+        transform: rotate(45deg);
     }
 
     .m-menu-button__line:nth-child(2) {
@@ -691,19 +688,21 @@ body {
     }
 
     .m-menu-button__line:nth-child(3) {
-        position: absolute;
         right: 0;
         bottom: 0;
-        transform: rotate(-45deg) translateY(-12px);
+        transform: rotate(-45deg);
     }
 }
 
 .m-menu {
     background-color: #9368a9;
     width: 100%;
-    height: calc(100vh - 136px);
-    padding: 60px 0;
+    height: 100vh;
+    padding-top: 60px;
+    padding-bottom: 80px;
     display: none;
+    position: absolute;
+    top: 0;
 
     &__container {
         height: 100%;
@@ -741,6 +740,14 @@ body {
         color: #ffffff;
         font-weight: normal;
         font-size: 20px;
+    }
+
+    &__button {
+        align-self: flex-end;
+    }
+
+    .m-menu-button__line {
+        background-color: #ffffff;
     }
 }
 

@@ -782,6 +782,7 @@ body {
 .m-menu-button {
   width: 24px;
   height: 20px;
+  position: relative;
   padding: 0;
   display: none;
   -webkit-box-orient: vertical;
@@ -804,22 +805,14 @@ body {
   width: 24px;
   height: 3px;
   background-color: #151515;
-  -webkit-transition: all 0.2s;
-  transition: all 0.2s;
-}
-
-.m-menu-button.active {
-  position: relative;
-  -webkit-transform: translateX(6px);
-          transform: translateX(6px);
 }
 
 .m-menu-button.active .m-menu-button__line:nth-child(1) {
   position: absolute;
   top: 0;
   left: 0;
-  -webkit-transform: rotate(45deg) translateY(12px);
-          transform: rotate(45deg) translateY(12px);
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
 }
 
 .m-menu-button.active .m-menu-button__line:nth-child(2) {
@@ -827,19 +820,21 @@ body {
 }
 
 .m-menu-button.active .m-menu-button__line:nth-child(3) {
-  position: absolute;
   right: 0;
   bottom: 0;
-  -webkit-transform: rotate(-45deg) translateY(-12px);
-          transform: rotate(-45deg) translateY(-12px);
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
 }
 
 .m-menu {
   background-color: #9368a9;
   width: 100%;
-  height: calc(100vh - 136px);
-  padding: 60px 0;
+  height: 100vh;
+  padding-top: 60px;
+  padding-bottom: 80px;
   display: none;
+  position: absolute;
+  top: 0;
 }
 
 .m-menu__container {
@@ -889,6 +884,15 @@ body {
   color: #ffffff;
   font-weight: normal;
   font-size: 20px;
+}
+
+.m-menu__button {
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+}
+
+.m-menu .m-menu-button__line {
+  background-color: #ffffff;
 }
 
 .m-menu.active {
