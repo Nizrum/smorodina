@@ -1545,6 +1545,9 @@ body {
     padding: 14px 30px;
     font-size: 14px;
   }
+  button.swiper-button-prev, button.swiper-button-next {
+    width: 45px;
+  }
 }
 
 @media (max-width: 320px) {
