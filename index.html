@@ -1,13 +1,15 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles/style.css">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="css/style.css">
     <title>Smorodina</title>
 </head>
+
 <body>
     <header class="header">
         <div class="container">
@@ -127,8 +129,8 @@
                     <button class="catalog__filter filter" data-filter="white-smor">Белая</button>
                 </div>
                 <div class="catalog__cards">
-                    
-                    <div class="swiper-container">
+
+                    <div class="swiper">
 
                         <div class="swiper-wrapper">
                             <div class="swiper-slide red-smor">
@@ -141,8 +143,8 @@
                                     <div class="card__text">
                                         <h4 class="card__title">Натали</h4>
                                         <div class="card__subtitle">
-                                            Среднеспелый сорт 
-                                            со вкусными 
+                                            Среднеспелый сорт
+                                            со вкусными
                                             кисло-сладкими ягодами
                                         </div>
                                         <div class="card__price">600₽ /кг</div>
@@ -159,8 +161,8 @@
                                     <div class="card__text">
                                         <h4 class="card__title">Багира</h4>
                                         <div class="card__subtitle">
-                                            Сладкая смородина, 
-                                            среднего срока 
+                                            Сладкая смородина,
+                                            среднего срока
                                             созревания
                                         </div>
                                         <div class="card__price">640₽ /кг</div>
@@ -177,8 +179,8 @@
                                     <div class="card__text">
                                         <h4 class="card__title">Булонь</h4>
                                         <div class="card__subtitle">
-                                            Ягоды кремового 
-                                            цвета с нежной 
+                                            Ягоды кремового
+                                            цвета с нежной
                                             кисло-сладкой мякотью
                                         </div>
                                         <div class="card__price">580₽ /кг</div>
@@ -187,15 +189,13 @@
                             </div>
                         </div>
 
+                        <button class="swiper-button-prev control-button">
+                            <img src="img/arrow.svg" alt="arw">
+                        </button>
+                        <button class="swiper-button-next control-button">
+                            <img src="img/arrow.svg" alt="arw">
+                        </button>
                     </div>
-
-                    <button class="swiper-button-prev control-button">
-                        <img src="img/arrow.svg" alt="arw">
-                    </button>
-                    <button class="swiper-button-next control-button">
-                        <img src="img/arrow.svg" alt="arw">
-                    </button>
-
                 </div>
             </div>
         </div>
@@ -206,16 +206,22 @@
                 <h2 class="gallery__title">Наши плантации</h2>
                 <div class="gallery__photos photos">
                     <div class="photos__group">
-                        <div class="photos__image photos__image--small"><img src="img/gallery-photo-1.jpg" alt="photo"></div>
-                        <div class="photos__image photos__image--big"><img src="img/gallery-photo-2.jpg" alt="photo"></div>
+                        <div class="photos__image photos__image--small"><img src="img/gallery-photo-1.jpg" alt="photo">
+                        </div>
+                        <div class="photos__image photos__image--big"><img src="img/gallery-photo-2.jpg" alt="photo">
+                        </div>
                     </div>
                     <div class="photos__group">
-                        <div class="photos__image photos__image--big"><img src="img/gallery-photo-3.jpg" alt="photo"></div>
-                        <div class="photos__image photos__image--small"><img src="img/gallery-photo-4.jpg" alt="photo"></div>
+                        <div class="photos__image photos__image--big"><img src="img/gallery-photo-3.jpg" alt="photo">
+                        </div>
+                        <div class="photos__image photos__image--small"><img src="img/gallery-photo-4.jpg" alt="photo">
+                        </div>
                     </div>
                     <div class="photos__group">
-                        <div class="photos__image photos__image--small"><img src="img/gallery-photo-5.jpg" alt="photo"></div>
-                        <div class="photos__image photos__image--big"><img src="img/gallery-photo-6.jpg" alt="photo"></div>
+                        <div class="photos__image photos__image--small"><img src="img/gallery-photo-5.jpg" alt="photo">
+                        </div>
+                        <div class="photos__image photos__image--big"><img src="img/gallery-photo-6.jpg" alt="photo">
+                        </div>
                     </div>
                 </div>
             </div>
@@ -229,14 +235,14 @@
                     <div class="about__text">
                         <h3 class="about__text-title">Мы - команда любителей смородины!</h3>
                         <div class="about__text-subtitle">
-                            Сложившаяся структура организации позволяет 
-                            оценить значение форм развития. Повседневная 
-                            практика показывает, что консультация с 
-                            широким активом требуют определения и 
-                            уточнения позиций, занимаемых участниками в 
-                            отношении поставленных задач. Товарищи! 
-                            Постоянный количественный рост и сфера нашей 
-                            активности требуют от нас анализа позиций, 
+                            Сложившаяся структура организации позволяет
+                            оценить значение форм развития. Повседневная
+                            практика показывает, что консультация с
+                            широким активом требуют определения и
+                            уточнения позиций, занимаемых участниками в
+                            отношении поставленных задач. Товарищи!
+                            Постоянный количественный рост и сфера нашей
+                            активности требуют от нас анализа позиций,
                             занимаемых участниками в отношении поставленных задач.
                         </div>
                     </div>
@@ -297,11 +303,9 @@
                     </div>
                 </div>
                 <div class="footer__map">
-                    <iframe 
-                    src="https://yandex.ru/map-widget/v1/?um=constructor%3Aa3b05b1435236033aa826650b627b59d3116bfc98e6aa6b20bd57e5599191a77&amp;source=constructor" 
-                    width="370" 
-                    height="310" 
-                    frameborder="0">
+                    <iframe
+                        src="https://yandex.ru/map-widget/v1/?um=constructor%3Aa3b05b1435236033aa826650b627b59d3116bfc98e6aa6b20bd57e5599191a77&amp;source=constructor"
+                        width="370" height="310" frameborder="0">
                     </iframe>
                 </div>
                 <div class="footer__contacts">
@@ -314,4 +318,5 @@
     </footer>
     <script src="script.js" type="module"></script>
 </body>
+
 </html>
